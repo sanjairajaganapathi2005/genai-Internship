@@ -30,11 +30,11 @@ def load_or_create_vector_db():
         else:
             print(Fore.YELLOW + "Local FAISS index not found. Creating new vector store...")
 
-            loader = CSVLoader(file_path="gen/data.csv")
+            loader = CSVLoader(file_path="gen/alumni_data.csv")
             transcript = loader.load()
 
             print(Fore.YELLOW + "Splitting documents into chunks...")
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=900, chunk_overlap=100)
 
             docs = []
             for doc in tqdm(transcript, desc="Processing documents"):
