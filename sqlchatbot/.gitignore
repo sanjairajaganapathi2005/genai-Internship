@@ -1,0 +1,47 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Flask instance folder
+instance/
+
+# Flask config files (you may choose to adjust if you have other config files)
+*.env
+.env
+*.flaskenv
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Virtual environment folder (if using virtualenv or venv)
+venv/
+ENV/
+env/
+.venv/
+
+# Pytest cache
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# SQLite databases (if used)
+*.db
+*.sqlite
+
+# MySQL dump files (if used)
+*.sql
